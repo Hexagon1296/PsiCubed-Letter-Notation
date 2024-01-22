@@ -1,4 +1,4 @@
-let coll = document.getElementsByClassName("opened");
+let coll = document.getElementsByClassName("collapser");
 
 for(let i = 0;i<coll.length;i++){
   let el = coll[i];
