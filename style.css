@@ -30,3 +30,7 @@ ul.nav {
   margin-left: 280px;
   padding: 15px;
 }
+
+.collapser {
+  cursor: pointer;
+}
