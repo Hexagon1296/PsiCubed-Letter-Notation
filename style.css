@@ -16,7 +16,7 @@ nav {
 ul.nav {
   list-style-type: none;
   margin: 0;
-  max-height: 0;
+  max-height: 10000000000000px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
