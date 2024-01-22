@@ -6,7 +6,7 @@ body {
 nav {
   background: #333;
   font-color: white;
-  width: 270px;
+  width: 280px;
   overflow: scroll;
   height: 100%;
   position: fixed;
@@ -20,4 +20,9 @@ ul.nav {
 
 .navbar {
   padding: 8px;
+}
+
+.content {
+  margin-left: 280px;
+  padding: 15px;
 }
