@@ -37,7 +37,7 @@ ul.nav {
 
 #next {
   position: absolute;
-  right: 0
+  right: 100%
   margin-left: inherit;
 }
 
