@@ -8,8 +8,6 @@ nav {
   font-color: white;
   width: 260px;
   position: fixed;
-  top: 0px;
-  left: 0px;
   overflow: scroll;
   padding: 15px;
 }
