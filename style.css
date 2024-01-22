@@ -2,17 +2,13 @@ body {
   font-family: "Noto Sans", "IBM Plex Sans", Veranda, Helvetica, Arial, sans-serif;
   font-size: 15px;
   padding: 15px;
-  position: relative;
-  right: 275px;
 }
 
 nav {
   background: #333;
   font-color: white;
   width: 260px;
-  position: fixed;
   overflow: scroll;
-  top: 0px; left: 0px;
   height: 100%;
 }
 
