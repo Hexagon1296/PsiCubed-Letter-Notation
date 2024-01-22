@@ -1,14 +1,13 @@
 let coll = document.getElementsByClassName("open");
 
 for(let i = 0;i<coll.length;i++){
- coll[i].addEventListener("click", function() {
-    this.classList.toggle("closed");
+ coll[i].addEventListener("onclick", function() {
+    this.classList.toggle("collapsed");
     var content = this.parentElement.nextElementSibling;
-    alert(content);
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
+    if (content.style.display === "") {
+      content.style.display = "none";
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.display = "";
     }
   });
 }
