@@ -23,6 +23,7 @@ for(let i = 0;i<coll.length;i++){
       content = content.parentElement
       while (content.constructor.name!="HTMLDivElement"){
         content.style.maxHeight = height+(content.style.maxHeight.slice(0,-2)) + "px";
+        content = content.parentElement
       }
     }
   });
