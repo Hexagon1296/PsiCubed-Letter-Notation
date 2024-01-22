@@ -17,6 +17,7 @@ for(let i = 0;i<coll.length;i++){
     content = content.nextElementSibling
     if (content.style.maxHeight!="0px"){
       content.style.maxHeight = "0";
+      this.src = "close.png";
     } else {
       height = content.scrollHeight
       content.style.maxHeight = height + "px";
@@ -25,6 +26,7 @@ for(let i = 0;i<coll.length;i++){
         content.style.maxHeight = height+(content.style.maxHeight.slice(0,-2)) + "px";
         content = content.parentElement
       }
+      this.src = "open.png";
     }
   });
 }
