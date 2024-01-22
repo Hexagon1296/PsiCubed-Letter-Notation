@@ -11,7 +11,7 @@ for(let i = 0;i<coll.length;i++){
     if (content.style.maxHeight!="0px"){
       content.style.maxHeight = "0";
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.maxHeight = "none";
     }
   });
 }
