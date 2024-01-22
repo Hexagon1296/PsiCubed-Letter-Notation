@@ -2,3 +2,18 @@ body {
   font-family: "Noto Sans", "IBM Plex Sans", Veranda, Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
+
+nav {
+  background: #333;
+  font-color: white;
+  width: 120px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
