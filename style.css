@@ -38,9 +38,12 @@ ul.nav {
 #next {
   position: absolute;
   right: 0
+  padding-right: inherit;
 }
 
 #prev {
   position: absolute;
   left: 0
+  padding-right: inherit;
+  margin-left: inherit;
 }
