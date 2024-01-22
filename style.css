@@ -9,13 +9,15 @@ nav {
   width: 260px;
   overflow: scroll;
   height: 100%;
-  padding: 15px;
-  margin: 15px;
   position: fixed;
   top: 0; left: 0;
 }
 
-ul {
+ul.nav {
   list-style-type: none;
   margin: 0;
+}
+
+.navbar {
+  padding: 15px;
 }
