@@ -34,3 +34,13 @@ ul.nav {
 .collapser {
   cursor: pointer;
 }
+
+#next {
+  position: absolute;
+  right: 0
+}
+
+#prev {
+  position: absolute;
+  left: 0
+}
