@@ -37,13 +37,12 @@ ul.nav {
 
 #next {
   position: absolute;
-  right: 0;
+  right: 0
 }
 
 #prev {
   position: absolute;
-  left: 0;
-  margin-left: inherit;
+  left: 0
 }
 
 h1, h2, h3, h4, h5, h6 {
