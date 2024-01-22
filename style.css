@@ -6,10 +6,12 @@ body {
 nav {
   background: #333;
   font-color: white;
-  width: 120px;
+  width: 260px;
   position: fixed;
   top: 0px;
   left: 0px;
+  overflow: scroll;
+  padding: 15px;
 }
 
 ul {
