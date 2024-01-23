@@ -1,7 +1,7 @@
 let coll = document.getElementsByClassName("collapser");
 let con = document.getElementsByClassName("content")[0];
 let nav = document.getElementsByClassName("navbar")[0];
-alert(con.width);
+alert(nav.style.width);
 
 for(let i = 0;i<coll.length;i++){
   let el = coll[i];
