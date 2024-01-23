@@ -35,16 +35,6 @@ ul.nav {
   cursor: pointer;
 }
 
-#next {
-  width: 100%;
-  text-align: right;
-}
-
-#prev {
-  width: 100%;
-  text-align: left;
-}
-
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
