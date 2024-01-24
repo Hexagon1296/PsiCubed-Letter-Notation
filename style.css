@@ -57,6 +57,6 @@ ol {
   list-style-type: enclosed-numeric;
 }
 
-math {
+.math {
   font-style: "STIX Two Math", "Cambria Math", serif;
 }
