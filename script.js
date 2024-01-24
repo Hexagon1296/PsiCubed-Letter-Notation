@@ -3,6 +3,7 @@ let con = document.getElementsByClassName("content")[0];
 let nav = document.getElementsByClassName("navbar")[0];
 let val = (x) => +(x.slice(0,-2));
 let navWidth = val(window.getComputedStyle(nav).width) - val(window.getComputedStyle(nav).paddingRight) - val(window.getComputedStyle(nav).paddingLeft)
+
 con.style.width = con.clientWidth - navWidth;
 
 for(let i = 0;i<coll.length;i++){
