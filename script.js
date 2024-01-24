@@ -1,4 +1,7 @@
 let coll = document.getElementsByClassName("collapser");
+let next = document.getElementById("next");
+let cont = document.getElementsByClassName("content")[0];
+next.style.top = next.offsetTop + "px";
 
 for(let i = 0;i<coll.length;i++){
   let el = coll[i];
