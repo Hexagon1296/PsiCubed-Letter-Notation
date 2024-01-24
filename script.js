@@ -4,6 +4,7 @@ let nav = document.getElementsByClassName("navbar")[0];
 let val = (x) => +(x.slice(0,-2));
 let navWidth = val(window.getComputedStyle(nav).width) + val(window.getComputedStyle(nav).paddingRight) + val(window.getComputedStyle(nav).paddingLeft)
 con.style.width = con.clientWidth - navWidth + "px";
+con.style.marginLeft = navWidth + "px";
 
 for(let i = 0;i<coll.length;i++){
   let el = coll[i];
