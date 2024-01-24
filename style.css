@@ -1,4 +1,4 @@
-body {
+ebody {
   font-family: "Noto Sans", "IBM Plex Sans", Verdana, Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
@@ -38,8 +38,8 @@ ul.nav {
 #next {
   margin-left: 272px;
   padding: 15px;
-  position: absolute;
-  right: 0;
+  position: relative;
+  right: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
