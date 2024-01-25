@@ -14,8 +14,9 @@ for(let i = 0;i<coll.length;i++){
   el.addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.parentElement;
+    alert(content.constructor.name);
     if (content.constructor.name=="HTMLDivElement"){
-      content = this;
+      content = this.nextElementSibling;
     }
     content = content.nextElementSibling
     if (content.style.maxHeight!="0px"){
