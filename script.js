@@ -23,7 +23,7 @@ for(let i = 0;i<coll.length;i++){
       let height = content.scrollHeight;
       content = content.parentElement;
       while (content.constructor.name!="HTMLDivElement"){
-        content.style.maxHeight = height-(+(content.style.maxHeight.slice(0,-2))) + "px";
+        content.style.maxHeight = (+(content.style.maxHeight.slice(0,-2)))-height + "px";
         content = content.parentElement;
       }
       this.src = "/PsiCubed-Letter-Notation/close.png";
