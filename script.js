@@ -1,5 +1,9 @@
 let coll = document.getElementsByClassName("collapser");
 let next = document.getElementById("next");
+let oldWarn = document.getElementById("oldchromium");
+if(oldWarn){
+  console.log(window.navigator.userAgent);
+}
 let cont = document.getElementsByClassName("content")[0];
 if(next) next.style.top = next.offsetTop - 15 + "px";
 
