@@ -7,7 +7,7 @@ for(let i = 0;i<coll.length;i++){
   let el = coll[i];
   let content = el.parentElement;
   if (content.constructor.name=="HTMLDivElement"){
-    content = el;
+    content = el.nextElementSibling;
   }
   content = content.nextElementSibling
   content.style.maxHeight = content.scrollHeight + "px";
@@ -17,20 +17,17 @@ for(let i = 0;i<coll.length;i++){
     if (content.constructor.name=="HTMLDivElement"){
       content = this.nextElementSibling;
     }
-    content = content.nextElementSibling
+    content = content.nextElementSibling;
     if (content.style.maxHeight!="0px"){
       content.style.maxHeight = "0px";
       this.src = "/PsiCubed-Letter-Notation/close.png";
     } else {
       height = content.scrollHeight
       content.style.maxHeight = height + "px";
-      content = content.parentElement
-      if (content.constructor.name!="HTMLDivElement"){
-        content = content.nextElementSibling
-      }
+      content = content.parentElement;
       while (content.constructor.name!="HTMLDivElement"){
-        content.style.maxHeight = height+(content.style.maxHeight.slice(0,-2)) + "px";
-        content = content.parentElement
+        content.style.maxHeight = height+(+(content.style.maxHeight.slice(0,-2))) + "px";
+        content = content.parentElement;
       }
       this.src = "/PsiCubed-Letter-Notation/open.png";
     }
