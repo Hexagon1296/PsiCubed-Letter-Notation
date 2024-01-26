@@ -14,18 +14,20 @@ for(let i = 0;i<coll.length;i++){
   el.addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.parentElement;
-    alert(content.constructor.name);
     if (content.constructor.name=="HTMLDivElement"){
       content = this.nextElementSibling;
     }
     content = content.nextElementSibling
     if (content.style.maxHeight!="0px"){
-      content.style.maxHeight = "0";
+      content.style.maxHeight = "0px";
       this.src = "/PsiCubed-Letter-Notation/close.png";
     } else {
       height = content.scrollHeight
       content.style.maxHeight = height + "px";
       content = content.parentElement
+      if (content.constructor.name!="HTMLDivElement"){
+        content = content.nextElementSibling
+      }
       while (content.constructor.name!="HTMLDivElement"){
         content.style.maxHeight = height+(content.style.maxHeight.slice(0,-2)) + "px";
         content = content.parentElement
